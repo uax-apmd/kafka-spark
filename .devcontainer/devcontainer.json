@@ -19,8 +19,11 @@
         "python.analysis.extraPaths": [
           "/usr/local/spark/python"
         ],
-        "python.formatter": "black",
-        "jupyter.jupyterServerType": "local",
+        "python.analysis.diagnosticSeverityOverrides": {
+          "reportAttributeAccessIssue": "none"
+        },
+        "jupyter.askForKernel": false,
+        "jupyter.jupyterServer.defaultKernel": "ipykernel",
         "editor.formatOnSave": true
       }
     }

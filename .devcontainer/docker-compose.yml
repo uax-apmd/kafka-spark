@@ -12,7 +12,6 @@ services:
       - zookeeper
     environment:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_BROKER_ID: 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
@@ -23,8 +22,7 @@ services:
     image: jupyter/pyspark-notebook:spark-3.5.0
     depends_on:
       - kafka
-    environment:
-      JUPYTER_TOKEN: "pass"
+    command: start-notebook.py --IdentityProvider.token=''
     ports:
       - "8888:8888"
     volumes:
