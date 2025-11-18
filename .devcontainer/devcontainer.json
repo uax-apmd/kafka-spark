@@ -15,11 +15,13 @@
         "ms-python.black-formatter"
       ],
       "settings": {
+        "extensions.ignoreRecommendations": true,
         "python.defaultInterpreterPath": "/opt/conda/bin/python",
         "python.analysis.typeCheckingMode": "basic",
         "python.analysis.extraPaths": [
           "/usr/local/spark/python"
         ],
+        "jupyter.jupyterServerType": "local",
         "python.formatter": "black",
         "editor.formatOnSave": true
       }
