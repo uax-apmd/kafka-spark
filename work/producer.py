@@ -9,7 +9,9 @@ producer = Producer(
 
 topic = "datosCSV"
 
-print("Console producer running. Type messages and press Enter. CTRL+C to exit.")
+print(
+    f"Console producer running. Type messages and press Enter to send to topic {topic}. CTRL+C to exit."
+)
 
 try:
     for line in sys.stdin:

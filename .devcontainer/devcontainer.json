@@ -20,7 +20,8 @@
           "/usr/local/spark/python"
         ],
         "python.analysis.diagnosticSeverityOverrides": {
-          "reportAttributeAccessIssue": "none"
+          "reportAttributeAccessIssue": "none",
+          "reportOptionalMemberAccess": "none"
         },
         "jupyter.askForKernel": false,
         "jupyter.jupyterServer.defaultKernel": "ipykernel",
