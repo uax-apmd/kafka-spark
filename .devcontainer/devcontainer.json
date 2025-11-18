@@ -2,8 +2,7 @@
   "name": "PySpark + Kafka Dev",
   "dockerComposeFile": "docker-compose.yml",
   "service": "pyspark",
-  "remoteUser": "jovyan",
-  "workspaceFolder": "/home/jovyan/kafka-spark",
+  "workspaceFolder": "/home/jovyan/work",
   "postCreateCommand": ".devcontainer/setup.sh",
   "customizations": {
     "vscode": {
@@ -24,7 +23,7 @@
           "reportOptionalMemberAccess": "none"
         },
         "jupyter.askForKernel": false,
-        "jupyter.jupyterServer.defaultKernel": "ipykernel",
+        "jupyter.jupyterServer.defaultKernel": "python3",
         "editor.formatOnSave": true
       }
     }
