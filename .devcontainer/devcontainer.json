@@ -24,7 +24,7 @@
         "python.formatter": "black",
         "jupyter.askForKernel": false,
         "jupyter.jupyterServerType": "local",
-        "jupyter.notebook.defaultKernel": "python",
+        "jupyter.notebook.defaultKernel": "base",
         "editor.formatOnSave": true
       }
     }
