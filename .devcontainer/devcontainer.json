@@ -1,18 +1,16 @@
 {
   "name": "PySpark + Kafka Dev",
-
   "dockerComposeFile": "docker-compose.yml",
   "service": "pyspark",
-  "workspaceFolder": "/home/jovyan/work",
   "remoteUser": "jovyan",
-  "postCreateCommand": "pip install -r requirements.txt",
-
+  "workspaceFolder": "/home/jovyan/kafka-spark",
+  "postCreateCommand": ".devcontainer/setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-toolsai.jupyter",
-        "ms-python.black-formatter"
+        "ms-python.black-formatter",
+        "ms-toolsai.jupyter"
       ],
       "settings": {
         "workbench.welcomePage.experimental.extensionContributions": false,
@@ -22,9 +20,7 @@
           "/usr/local/spark/python"
         ],
         "python.formatter": "black",
-        "jupyter.askForKernel": false,
         "jupyter.jupyterServerType": "local",
-        "jupyter.notebook.defaultKernel": "base",
         "editor.formatOnSave": true
       }
     }
