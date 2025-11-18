@@ -15,7 +15,7 @@
         "ms-python.black-formatter"
       ],
       "settings": {
-        "extensions.ignoreRecommendations": true,
+        "workbench.welcomePage.experimental.extensionContributions": false,
         "python.defaultInterpreterPath": "/opt/conda/bin/python",
         "python.analysis.typeCheckingMode": "basic",
         "python.analysis.extraPaths": [
